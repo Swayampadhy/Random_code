@@ -6,10 +6,6 @@
 enum class Player { BLUE, RED };
 
 
-bool HexBoard::inBoard(int x, int y) const
-{
-	return x>=0 && x<size && y>=0 && y<size;
-}
 
 class HexBoard
 {
@@ -51,6 +47,10 @@ private:
 	std::vector<std::vector<char> > board;
 };
 
+bool HexBoard::inBoard(int x, int y) const
+{
+	return x>=0 && x<size && y>=0 && y<size;
+}
 void HexBoard::checkBorders(int x, int y, 
 		std::vector<bool> &flags, char side) const
 {
