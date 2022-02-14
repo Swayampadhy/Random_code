@@ -4,3 +4,4 @@ main
 .idea/modules.xml
 .idea/vcs.xml
 .idea/Projects.iml
+.vscode/c_cpp_properties.json
