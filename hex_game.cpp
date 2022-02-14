@@ -1,3 +1,4 @@
+//Code for a hex 10x10 game
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
