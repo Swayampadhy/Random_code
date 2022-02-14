@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-#include <hex_board.h>
+#include <hex_board.h>  
 using namespace std;
 
 int main()
