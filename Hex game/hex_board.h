@@ -1,11 +1,15 @@
 #ifndef hex_board_h
 #define hex_board_h
-
 #include <vector>
 #include <iostream>
 #include <string>
-
 enum class Player { BLUE, RED };
+
+
+bool HexBoard::inBoard(int x, int y) const
+{
+	return x>=0 && x<size && y>=0 && y<size;
+}
 
 class HexBoard
 {
@@ -46,11 +50,6 @@ private:
 	std::string connectedLine;
 	std::vector<std::vector<char> > board;
 };
-
-bool HexBoard::inBoard(int x, int y) const
-{
-	return x>=0 && x<size && y>=0 && y<size;
-}
 
 void HexBoard::checkBorders(int x, int y, 
 		std::vector<bool> &flags, char side) const
