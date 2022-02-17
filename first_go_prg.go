@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Println("Hello World")
-
+	s := make([]int, 0, 3)
+	s = append(s, 100)
+	fmt.Println(len(s), cap(s))
 }
